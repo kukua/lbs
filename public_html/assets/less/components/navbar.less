@@ -1,0 +1,26 @@
+.navbar {
+	margin-bottom: 0;
+}
+.navbar-brand {
+	padding: 3px 0;
+}
+.navbar-default {
+	background-color: #fff;
+}
+
+.navbar-default {
+	li a {
+		&:active, &:hover, &:focus {
+			color: @light-color;
+			background-color: @brand-primary;
+		}
+	}
+}
+
+.navbar-default .navbar-nav > .open > a, 
+.navbar-default .navbar-nav > .open > a:focus, 
+.navbar-default .navbar-nav > .open > a:hover,
+.navbar-default .navbar-nav > .open > a:active {
+	background-color: @brand-primary!important;
+	color: @light-color;
+}
