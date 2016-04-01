@@ -357,7 +357,7 @@
 					</a>
 				</div>
 				<div class="col-xs-6 col-sm-4 col-sm-offset-4 col-md-2 col-md-offset-8">
-					<img src="/assets/img/lbs_logo.jpg" style="height: 90px; margin-top: 8px; float: right;">
+					<a href="https://www.london.edu/" target="_blank"><img src="/assets/img/lbs_logo.jpg" style="height: 90px; margin-top: 8px; float: right;"></a>
 				</div>
 			</div>
 		</div>
