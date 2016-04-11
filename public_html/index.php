@@ -372,7 +372,9 @@
 					<input type="hidden" name="country" id="js-graph-country" class="hidden" value="9">
 					<div class="col-sm-4">
 						<label class="ellipsis" title="Select graph">Select graph</label>
-						<select id="js-graph-type-swap" class="form-control" name="panelId"><option value="74" data-text="Temperature">Temperature</option><option value="75" data-text="Rainfall">Rainfall</option><option value="76" data-text="Humidity">Humidity</option><option value="77" data-text="Pressure">Pressure</option><option value="78" data-text="Wind">Wind</option><option value="79" data-text="Battery">Battery</option></select>
+						<select id="js-graph-type-swap" class="form-control" name="panelId">
+							<option value="74" data-text="Temperature">Temperature</option><option value="75" data-text="Rainfall">Rainfall</option><option value="76" data-text="Humidity">Humidity</option><option value="77" data-text="Pressure">Pressure</option>
+						</select>
 					</div>
 					<div class="col-sm-4">
 						<div class="form-group">
@@ -400,7 +402,7 @@
 	</div>
 
 	<div class="container">
-		<div id="chart" style="margin-top: 40px; width:100%; height:700px;"></div>
+		<div id="chart" style="margin-top: 40px; width:100%; height:70%;"></div>
 	</div>
 
 	<script src="/assets/dist/main.min.js" type="text/javascript"></script>
