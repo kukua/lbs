@@ -523,7 +523,7 @@
 							<li>Budget: $100,000</li>
 							<li>Duration: 4 months</li>
 						</ul>
-						<a href="mailto:tom@kukua.cc">Contact</a>
+						<a href="mailto:tom@kukua.cc">Fully funded</a>
 					</div>
 				</div>
 				<div class="col-sm-9 img-box">
