@@ -12,7 +12,7 @@ class Sensordata {
 	 */
 	public static function get() {
 		$data = [
-			"region"	=> 1,
+			"region"	=> 7,
 			"type"		=> $_POST["type"],
 			"dateFrom"	=> $_POST["dateFrom"],
 			"dateTo"	=> $_POST["dateTo"],
