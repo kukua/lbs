@@ -9,13 +9,19 @@
 	<link rel="stylesheet" href="/assets/dist/main.min.css" type="text/css">
 </head>
 <body>
-	<div class="container">
-		<div class="row">
-			<div class="logos">
-				<div class="col-xs-6 col-sm-4 col-md-2">
-					<a href="http://www.kukua.cc" target="_blank">
-						<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-							viewBox="0 0 713 353" enable-background="new 0 0 713 353" xml:space="preserve">
+
+	<nav class="navbar navbar-default navbar-fixed-top">
+		<div class="container">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="http://www.kukua.cc/" title="Go to the home screen">
+					<svg version="1.1" class="logo" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" style="height: 100%; padding-left: 15px"
+							 viewBox="0 0 713 353" enable-background="new 0 0 713 353" xml:space="preserve">
 						<g>
 							<g>
 								<path fill="#6D4326" d="M245.062,129.301c0,0-1.153-0.992-3.383-2.765c-2.23-1.77-5.488-4.389-9.829-7.434
@@ -353,15 +359,98 @@
 							"/>
 						<path fill="#231F20" d="M695.45,237.877v-9.057c0-2.012,1.829-3.02,5.488-3.02h2.333c3.657,0,5.488,1.008,5.488,3.02v9.057
 							c0,2.012-1.831,3.018-5.488,3.018h-2.333C697.279,240.895,695.45,239.889,695.45,237.877z"/>
-						</svg>
-					</a>
-				</div>
-				<div class="col-xs-6 col-sm-4 col-sm-offset-4 col-md-2 col-md-offset-8">
-					<a href="https://www.london.edu/" target="_blank"><img src="/assets/img/lbs_logo.jpg" style="height: 90px; margin-top: 8px; float: right;"></a>
+					</svg>
+				</a>
+			</div>
+			<div id="navbar" class="collapse navbar-collapse">
+				<ul class="nav navbar-nav navbar-right">
+					<li><a href="https://dashboard.kukua.cc">Dashboard</a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+	<div class="hero large" style="background-image: url('/assets/img/login_background.jpg');">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-6">
+					<h1>TRANSFORMING LIVES THROUGH ENTREPRENEURSHIP: KUKUA WEATHER DATA AND FORCASTING SERVICES FOR AFRICA</h1>
 				</div>
 			</div>
 		</div>
 	</div>
+
+	<!--<div class="col-xs-6 col-sm-4 col-sm-offset-4 col-md-2 col-md-offset-8">
+		<a href="https://www.london.edu/" target="_blank"><img src="/assets/img/lbs_logo.jpg" style="height: 90px; margin-top: 8px; float: right;"></a>
+	</div>-->
+
+	<div class="columns">
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-4">
+					<h2 class="text-center">HOW?</h2>
+					<h3 class="text-center">KUKUA WEATHER STATION</h3>
+					<ul>
+						<li>Cost efficient</li>
+						<li>Internet connected</li>
+						<li>Solar powered</li>
+					</ul>
+				</div>
+				<div class="col-xs-4">
+					<h2 class="text-center">WHAT?</h2>
+					<h3 class="text-center">RAW DATA THROUGH API</h3>
+					<ul>
+						<li>All weather data collected real-time in the Kukua Cloud</li>
+						<li>Raw data through API</li>
+						<li>Weather app</li>
+						<li>SMS Forecast</li>
+					</ul>
+				</div>
+				<div class="col-xs-4">
+					<h2 class="text-center">WHO?</h2>
+					<h3 class="text-center">FARMERS</h3>
+					<ul>
+						<li>All weather data collected real-time in the Kukua Cloud</li>
+						<li>Raw data through API</li>
+						<li>The majority female</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="divider">
+
+	</div>
+
+	<div class="involved">
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-12">
+					<h2>Want to get involved?</h2>
+					<h3>We have a project pipeline across Africa that could impact millions of lives! Can you help us find the funding?</h3>
+					<img src="/assets/img/login_background_lbs.jpg" class="img-responsive">
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="crops">
+		<div class="container">
+			<div class="col-xs-12">
+				<h1>Kukua can help farmers make critical decisions while providing access to crop insurance</h1>
+				<ul>
+					<li>Crop insurance</li>
+					<li>Can plant in next 10 days</li>
+					<li>Can apply pesticide</li>
+					<li>Can apply fertilizer</li>
+					<li>Can harvest</li>
+					<li>Different crop next?</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
 	<div class="advanced js-advanced-container">
 		<div class="container">
 			<form class="form" action="/graph/download" id="js-submit" method="post" accept-charset="utf-8" enctype="application/x-www-form-urlencoded" target="_blank">
@@ -373,7 +462,10 @@
 					<div class="col-sm-4">
 						<label class="ellipsis" title="Select graph">Select graph</label>
 						<select id="js-graph-type-swap" class="form-control" name="panelId">
-							<option value="74" data-text="Temperature">Temperature</option><option value="75" data-text="Rainfall">Rainfall</option><option value="76" data-text="Humidity">Humidity</option><option value="77" data-text="Pressure">Pressure</option>
+							<option value="Temperature">Temperature</option>
+							<option value="Rainfall">Rainfall</option>
+							<option value="Humidity">Humidity</option>
+							<option value="WindSpeed">Wind speed</option>
 						</select>
 					</div>
 					<div class="col-sm-4">

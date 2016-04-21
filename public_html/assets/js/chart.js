@@ -15,7 +15,7 @@
             var country = kukua.getGraphCountry()
 
             var postdata = {
-                'country': 9,
+                'region': 1,
                 'type': graphType.val(),
                 'dateFrom': selectedDate.data('daterangepicker').startDate.startOf('day').format('X'),
                 'dateTo': selectedDate.data('daterangepicker').endDate.endOf('day').format('X'),
@@ -33,22 +33,11 @@
             })
 
             call.done(function(request) {
-                var result = new Array()
-                if (request != null) {
-                    $.each(request, function(id, station) {
-                        var data  = new Object()
-                        data.name = station.name
-						data.color = '#cc0033'
-                        data.data = []
-                        $.each(station.values, function(key, value) {
-                            data.data.push(value)
-                        })
-                        result.push(data)
-                    })
+                var result = []
+				options.series = [];
+                if (request != null && request.length > 0) {
+					options.series = request;
                 }
-
-                //Add data points to the given options
-                options.series = result
 
                 //Combine given options with default options
                 var opt = $.extend({}, chart.getOptions(), options)

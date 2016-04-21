@@ -12,7 +12,7 @@ class Sensordata {
 	 */
 	public static function get() {
 		$data = [
-			"country"	=> 9,
+			"region"	=> 1,
 			"type"		=> $_POST["type"],
 			"dateFrom"	=> $_POST["dateFrom"],
 			"dateTo"	=> $_POST["dateTo"],
@@ -30,7 +30,8 @@ class Sensordata {
 	 */
 	public static function call($data = Array()) {
 		$curl = new \Curl\Curl();
-		$curl->post("http://dashboard.kukua.cc/api/sensordata/get",
+		$curl->setOpt(CURLOPT_SSL_VERIFYPEER, false);
+		$curl->post("https://dashboard.kukua.cc/api/sensordata/get",
 			$data
 		);
 		return $curl->response;
