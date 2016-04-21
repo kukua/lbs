@@ -685,7 +685,7 @@
 					<img src="/assets/img/download_icon.png" alt="" />
 					<div>
 						<h1>Download our brochures:</h1>
-						<h2><a href="javascript:;">Download</a></h2>
+						<h2><a href="/assets/pdf/brochures.zip">Download</a></h2>
 					</div>
 				</div>
 			</div>
