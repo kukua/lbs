@@ -1,0 +1,25 @@
+.examples {
+	margin: @spacing-half 0;
+	text-align: center;
+
+	.img-box {
+		display: inline-block;
+		margin: 0 auto;
+
+		.img-align-bottom {
+			height: 300px;
+			display: table-cell;
+			vertical-align: bottom;
+
+			img {
+				width: 100%;
+				max-height: 300px;
+				vertical-align: bottom;
+			}
+		}
+	}
+	p {
+		font-size: ceil((@font-size-base * 1.25));
+		margin: @spacing-quarter 0;
+	}
+}

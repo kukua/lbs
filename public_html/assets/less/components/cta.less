@@ -1,0 +1,46 @@
+.cta {
+	padding: @spacing-half 0;
+	background-color: #4e4e4e;
+	clear: both;
+
+	h1 {
+		margin: 0;
+		color: white;
+		font-size: @font-size-h2;
+		font-weight: 700;
+	}
+	h2 {
+		margin: 0;
+		color: @brand-primary;
+	}
+	.col-sm-6:last-child {
+		text-align: right;
+		img {
+			display: block;
+			width: auto;
+			height: 66px;
+			float: right;
+			clear: right;
+			margin-left: 30px;
+		}
+		& > div {
+			float: right;
+		}
+	}
+	@media (max-width: @screen-md) {
+		.col-sm-6:last-child {
+			img {
+				display: none;
+			}
+		}
+	}
+	@media (max-width: @screen-sm) {
+		.col-sm-6:last-child {
+			margin-top: @spacing-quarter;
+			text-align: left;
+			& > div {
+				float: none;
+			}
+		}
+	}
+}

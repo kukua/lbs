@@ -5,6 +5,7 @@
     "bootstrap": "~3.3.*",
     "moment": "~2.10.6",
     "highcharts": "highcharts-release#~4.2.1",
-    "bootstrap-daterangepicker": "~2.1.17"
+    "bootstrap-daterangepicker": "~2.1.17",
+    "matchHeight": "^0.7.0"
   }
 }

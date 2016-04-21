@@ -1,0 +1,33 @@
+.graph {
+	h1 {
+		color: white;
+		text-transform: uppercase;
+		margin: @spacing-quarter 0;
+	}
+	.form-control {
+		border-radius: 0;
+	}
+	#reportrange {
+		width: 100%;
+		padding: 6px 10px;
+		border: 1px solid #ccc;
+		background: #fff;
+		cursor: pointer;
+	}
+}
+.daterangepicker {
+	.ranges ul li {
+		border-radius: 0;
+		background-color: @gray-lighter;
+		color: @brand-primary;
+		border: 2px solid @gray-lighter;
+		&.active {
+			background-color: @brand-primary;
+			border-color: @brand-primary;
+			color: white;
+		}
+		&:hover {
+			border-color: @brand-primary;
+		}
+	}
+}

@@ -12,6 +12,8 @@
 		helpers.feedbackPost()
 
 		helpers.tableRowClick()
+
+    	$('.js-match-height').matchHeight()
 	};
 
 	helpers.forecast = function() {

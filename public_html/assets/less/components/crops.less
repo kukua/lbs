@@ -1,16 +1,30 @@
 .crops {
 	margin-top: @spacing-half;
-	padding: @spacing-half 0;
+	padding: @spacing-half 0 @spacing-double;
 	background-color: @brand-quatenary;
-}
+	background-image: url('/assets/img/farmer_crops_box.jpg');
+	background-size: cover;
+	background-position: 0 50%;
+	background-repeat: no-repeat;
 
-.crops h1 {
-	color: @light-color;
-	text-transform: uppercase;
-	font-weight: 700;
-}
-
-.crops ul li {
-	color: @light-color;
-	padding: 6px 0;
+	h1 {
+		color: @light-color;
+		text-transform: uppercase;
+		font-weight: 700;
+		margin: @spacing-one-eight 0 @spacing-half 0;
+	}
+	ul {
+		padding-left: 16px;
+		li {
+			color: @light-color;
+			padding: 6px 0;
+			font-size: ceil((@font-size-base * 1.25));
+			padding-left: @spacing-one-eight;
+		}
+	}
+	@media (max-width: @screen-sm) {
+		ul {
+			text-align: center;
+		}
+	}
 }

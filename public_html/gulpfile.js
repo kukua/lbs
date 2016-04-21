@@ -27,6 +27,7 @@ var js_files = [
     js_plugin_path + 'bootstrap-daterangepicker/daterangepicker.js',
     js_plugin_path + 'highcharts/highcharts.src.js',
     js_plugin_path + 'highcharts/highcharts-more.src.js',
+    js_plugin_path + 'matchHeight/dist/jquery.matchHeight.js',
 
     js_script_path + 'chart.js',
     js_script_path + 'graph.js',

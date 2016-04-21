@@ -2,7 +2,9 @@
 	margin-bottom: 0;
 }
 .navbar-brand {
-	padding: 3px 0;
+	padding: 15px 30px 15px 25px;
+	width: 170px;
+	height: 85px;
 }
 .navbar-default {
 	background-color: #fff;
@@ -17,8 +19,18 @@
 	}
 }
 
-.navbar-default .navbar-nav > .open > a, 
-.navbar-default .navbar-nav > .open > a:focus, 
+.navbar-default .navbar-nav {
+	padding-right: 15px;
+}
+.navbar-default .navbar-nav > li > a {
+	padding: 15px 30px;
+	text-transform: uppercase;
+	height: 85px;
+	line-height: 55px;
+}
+
+.navbar-default .navbar-nav > .open > a,
+.navbar-default .navbar-nav > .open > a:focus,
 .navbar-default .navbar-nav > .open > a:hover,
 .navbar-default .navbar-nav > .open > a:active {
 	background-color: @brand-primary!important;

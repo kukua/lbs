@@ -1,13 +1,15 @@
 .hero {
+	background-image: url('/assets/img/LBS_website_header.jpg');
 	background-size: cover;
 	background-position: 0 50%;
 	background-repeat: no-repeat;
 	border-bottom: 2px solid;
+	line-height: @line-height-base * 2;
 	h1 {
 		font-weight: 700;
 		text-transform: uppercase;
 		color: @light-color;
-		text-shadow: 1px 1px 4px #333;
+		text-shadow: 1px 1px 10px #555;
 	}
 	p,a {
 		color: @light-color;
@@ -18,6 +20,9 @@
 	}
 	&.large {
 		padding-top: @spacing-half;
-		padding-bottom: @spacing-quadruple;
+		padding-bottom: @spacing-half;
+	}
+	.logo {
+		padding-top: @spacing;
 	}
 }
