@@ -451,7 +451,7 @@
 				<div class="col-sm-4">
 					<div class="img-box">
 						<div class="img-align-bottom">
-							<img class="img-responsive" src="/assets/img/macbook.png" alt="MacBookuru" />
+							<img class="special" src="/assets/img/macbook.png" alt="MacBookuru" />
 						</div>
 					</div>
 					<p>Scientists and programme managers access real-time and historic weather data, with the possibility to download the data into Excel for further analysis.</p>
