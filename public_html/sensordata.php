@@ -34,6 +34,9 @@ class Sensordata {
 		$curl->post("https://dashboard.kukua.cc/api/sensordata/get",
 			$data
 		);
+		if ($curl->error) {
+			return $curl->errorMessage;
+		}
 		return $curl->response;
 	}
 }
