@@ -8,7 +8,7 @@
 	<link href="https://fonts.googleapis.com/css?family=Asap:400,700" rel="stylesheet" type="text/css">
 	<link rel="stylesheet" href="/assets/dist/main.min.css" type="text/css">
 
-	<meta property="og:image" content="https://lbs.kukua.cc/assets/img/kukua-logo-white.png">
+	<meta property="og:image" content="https://lbs.kukua.cc/assets/img/kukua-logo.png">
 	<meta property="og:title" content="Kukua meets LBS">
 	<meta property="og:description" content=" By partnering with the London Business School, Kukua Weather Services has gained access to an invaluable network.">
 	<meta property="og:url" content="https://lbs.kukua.cc">
