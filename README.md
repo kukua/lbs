@@ -6,6 +6,7 @@
 Set values
 ```bash
 $ cp .env.sample .env
+$ chmod 600 .env
 # > Edit configuration in .env
 
 $ cp public_html/.environment/default.php public_html/.environment/config.php
@@ -33,3 +34,9 @@ $ npm install
 $ bower install
 $ gulp build
 ```
+
+## License
+
+This software is licensed under the [MIT license](https://github.com/kukua/lbs/blob/master/LICENSE).
+
+© 2016 Kukua BV
