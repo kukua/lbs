@@ -12,11 +12,11 @@ class Sensordata {
 	 */
 	public static function get() {
 		$data = [
-			"region"	=> 7,
-			"type"		=> $_POST["type"],
-			"dateFrom"	=> $_POST["dateFrom"],
-			"dateTo"	=> $_POST["dateTo"],
-			"interval"	=> $_POST["interval"]
+			"region"		=> 7,
+			"measurement"	=> $_POST["type"],
+			"dateFrom"		=> $_POST["dateFrom"],
+			"dateTo"		=> $_POST["dateTo"],
+			"interval"		=> $_POST["interval"]
 		];
 
 		$result = self::call($data);
@@ -30,10 +30,10 @@ class Sensordata {
 	 */
 	public static function call($data = Array()) {
 		$curl = new \Curl\Curl();
-		$curl->setOpt(CURLOPT_SSL_VERIFYPEER, false);
 		$curl->post("https://dashboard.kukua.cc/api/sensordata/get",
 			$data
 		);
+
 		if ($curl->error) {
 			return $curl->errorMessage;
 		}
