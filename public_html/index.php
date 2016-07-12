@@ -636,10 +636,10 @@ date_default_timezone_set("Europe/London");
 					<input type="hidden" name="country" id="js-graph-country" class="hidden" value="9">
 					<div class="col-sm-4">
 						<label class="ellipsis" title="Select graph">Select graph</label>
-						<select id="js-graph-type-swap" class="form-control" name="type">
+						<select id="js-graph-type-swap" class="form-control" name="measurement">
 							<option value="temp">Temperature</option>
 							<option value="rain">Rainfall</option>
-							<option value="humid">Pressure</option>
+							<option value="pressure">Pressure</option>
 							<option value="humid">Humidity</option>
 							<option value="windSpeed">Wind speed</option>
 							<option value="windDir">Wind direction</option>
